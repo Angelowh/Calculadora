@@ -31,8 +31,9 @@ namespace Calculator
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_minimized = new System.Windows.Forms.PictureBox();
+            this.bt_close = new System.Windows.Forms.PictureBox();
             this.resultado = new System.Windows.Forms.Label();
-            this.painel = new System.Windows.Forms.Label();
             this.btScience = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -56,6 +57,8 @@ namespace Calculator
             this.negate = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_minimized)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_close)).BeginInit();
             this.btScience.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_dividir)).BeginInit();
@@ -68,13 +71,36 @@ namespace Calculator
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.bt_minimized);
+            this.panel1.Controls.Add(this.bt_close);
             this.panel1.Controls.Add(this.resultado);
-            this.panel1.Controls.Add(this.painel);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(326, 113);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            // 
+            // bt_minimized
+            // 
+            this.bt_minimized.Image = ((System.Drawing.Image)(resources.GetObject("bt_minimized.Image")));
+            this.bt_minimized.Location = new System.Drawing.Point(12, 10);
+            this.bt_minimized.Name = "bt_minimized";
+            this.bt_minimized.Size = new System.Drawing.Size(19, 19);
+            this.bt_minimized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bt_minimized.TabIndex = 4;
+            this.bt_minimized.TabStop = false;
+            this.bt_minimized.Click += new System.EventHandler(this.btminimized_Click);
+            // 
+            // bt_close
+            // 
+            this.bt_close.Image = ((System.Drawing.Image)(resources.GetObject("bt_close.Image")));
+            this.bt_close.Location = new System.Drawing.Point(37, 10);
+            this.bt_close.Name = "bt_close";
+            this.bt_close.Size = new System.Drawing.Size(19, 19);
+            this.bt_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bt_close.TabIndex = 2;
+            this.bt_close.TabStop = false;
+            this.bt_close.Click += new System.EventHandler(this.bt_close_Click);
             // 
             // resultado
             // 
@@ -85,19 +111,8 @@ namespace Calculator
             this.resultado.Name = "resultado";
             this.resultado.Size = new System.Drawing.Size(290, 40);
             this.resultado.TabIndex = 1;
+            this.resultado.Text = "0";
             this.resultado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // painel
-            // 
-            this.painel.AutoSize = true;
-            this.painel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.painel.Location = new System.Drawing.Point(12, 10);
-            this.painel.MinimumSize = new System.Drawing.Size(300, 10);
-            this.painel.Name = "painel";
-            this.painel.Size = new System.Drawing.Size(300, 15);
-            this.painel.TabIndex = 0;
-            this.painel.Text = "0";
-            this.painel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
             // btScience
             // 
@@ -399,7 +414,6 @@ namespace Calculator
             this.negate.TabIndex = 19;
             this.negate.Text = "+/-";
             this.negate.UseVisualStyleBackColor = false;
-            this.negate.Click += new System.EventHandler(this.negate_Click);
             // 
             // clear
             // 
@@ -450,6 +464,8 @@ namespace Calculator
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_minimized)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_close)).EndInit();
             this.btScience.ResumeLayout(false);
             this.btScience.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -465,11 +481,9 @@ namespace Calculator
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel slideMenuPanel;
         private System.Windows.Forms.Panel btScience;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox slideButton;
         private System.Windows.Forms.PictureBox bt_dividir;
         private System.Windows.Forms.PictureBox bt_multiplicar;
         private System.Windows.Forms.PictureBox bt_subtracao;
@@ -489,8 +503,9 @@ namespace Calculator
         private System.Windows.Forms.Button porcent;
         private System.Windows.Forms.Button negate;
         private System.Windows.Forms.Button clear;
-        private System.Windows.Forms.Label painel;
         private System.Windows.Forms.Label resultado;
+        private System.Windows.Forms.PictureBox bt_minimized;
+        private System.Windows.Forms.PictureBox bt_close;
     }
 }
 

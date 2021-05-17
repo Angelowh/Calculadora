@@ -55,90 +55,79 @@ namespace Calculator
             }
         }
 
-        private void slideButton_Click(object sender, EventArgs e)
-        {
-            if (slideMenuPanel.Width != slideButton.Width)
-            {
-                slideMenuPanel.Width = slideButton.Width;
-            }
-            else
-            {
-                slideMenuPanel.Width = btScience.Width;
-            }
-        }
         private void bt_0_Click(object sender, EventArgs e)
         {
-            painel.Text = "";
+            resultado.Text = "";
             userInput = "0";
-            painel.Text += userInput;
+            resultado.Text += userInput;
         }
 
         private void bt1_Click(object sender, EventArgs e)
         {
-            painel.Text = "";
+            resultado.Text = "";
             userInput += "1";
-            painel.Text += userInput;
+            resultado.Text += userInput;
         }
 
         private void bt2_Click(object sender, EventArgs e)
         {
-            painel.Text = "";
+            resultado.Text = "";
             userInput += "2";
-            painel.Text += userInput;
+            resultado.Text += userInput;
         }
 
         private void bt_3_Click(object sender, EventArgs e)
         {
-            painel.Text = "";
+            resultado.Text = "";
             userInput += "3";
-            painel.Text += userInput;
+            resultado.Text += userInput;
         }
 
         private void bt_4_Click(object sender, EventArgs e)
         {
-            painel.Text = "";
+            resultado.Text = "";
             userInput += "4";
-            painel.Text += userInput;
+            resultado.Text += userInput;
         }
 
         private void bt_5_Click(object sender, EventArgs e)
         {
-            painel.Text = "";
+            resultado.Text = "";
             userInput += "5";
-            painel.Text += userInput;
+            resultado.Text += userInput;
         }
 
         private void bt_6_Click(object sender, EventArgs e)
         {
-            painel.Text = "";
+            resultado.Text = "";
             userInput += "6";
-            painel.Text += userInput;
+            resultado.Text += userInput;
         }
 
         private void bt_7_Click(object sender, EventArgs e)
         {
-            painel.Text = "";
+            resultado.Text = "";
             userInput += "7";
-            painel.Text += userInput;
+            resultado.Text += userInput;
         }
 
         private void bt_8_Click(object sender, EventArgs e)
         {
-            painel.Text = "";
+            resultado.Text = "";
             userInput += "8";
-            painel.Text += userInput;
+            resultado.Text += userInput;
         }
 
         private void bt_9_Click(object sender, EventArgs e)
         {
-            painel.Text = "";
+            resultado.Text = "";
             userInput += "9";
-            painel.Text += userInput;
+            resultado.Text += userInput;
         }
 
         private void bt_dividir_Click(object sender, EventArgs e)
         {
-            painel.Text = "0";
+            resultado.Text = "0";
             function = '/';
             first = userInput;
             userInput = "";
@@ -146,7 +135,7 @@ namespace Calculator
 
         private void bt_multiplicar_Click(object sender, EventArgs e)
         {
-            painel.Text = "0";
+            resultado.Text = "0";
             function = '*';
             first = userInput;
             userInput = "";
@@ -154,7 +143,7 @@ namespace Calculator
 
         private void bt_subtracao_Click(object sender, EventArgs e)
         {
-            painel.Text = "0";
+            resultado.Text = "0";
             function = '-';
             first = userInput;
             userInput = "";
@@ -162,7 +151,7 @@ namespace Calculator
 
         private void bt_mais_Click(object sender, EventArgs e)
         {
-            painel.Text = "0";
+            resultado.Text = "0";
             function = '+';
             first = userInput;
             userInput = "";
@@ -194,7 +183,7 @@ namespace Calculator
             {
                 if (secondNum == 0)
                 {
-                    painel.Text = "Error";
+                    resultado.Text = "Error";
                 }
                 else
                 {
@@ -210,18 +199,22 @@ namespace Calculator
             second = "";
             userInput = "";
             result = 0.0;
-            painel.Text = "0";
             resultado.Text = "";
         }
 
         private void bt_decimal_Click(object sender, EventArgs e)
         {
-            painel.Text += ".";
+            resultado.Text += ".";
         }
 
-        private void negate_Click(object sender, EventArgs e)
+        private void bt_close_Click(object sender, EventArgs e)
         {
-            
+            Close();
+        }
+
+        private void btminimized_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
