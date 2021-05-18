@@ -57,72 +57,162 @@ namespace Calculator
 
         private void bt_0_Click(object sender, EventArgs e)
         {
-            resultado.Text = "";
-            userInput = "0";
-            resultado.Text += userInput;
+            if (resultado.Text == "0")
+            {
+                resultado.Text = "";
+                userInput = "0";
+                resultado.Text = userInput;
+            }
+            else
+            {
+                resultado.Text = "";
+                userInput += "0";
+                resultado.Text += userInput;
+            }
         }
 
         private void bt1_Click(object sender, EventArgs e)
         {
-            resultado.Text = "";
-            userInput += "1";
-            resultado.Text += userInput;
+            if (resultado.Text == "0")
+            {
+                resultado.Text = "";
+                userInput = "1";
+                resultado.Text = userInput;
+            }
+            else
+            {
+                resultado.Text = "";
+                userInput += "1";
+                resultado.Text += userInput;
+            }
         }
 
         private void bt2_Click(object sender, EventArgs e)
         {
-            resultado.Text = "";
-            userInput += "2";
-            resultado.Text += userInput;
+            if (resultado.Text == "0")
+            {
+                resultado.Text = "";
+                userInput = "2";
+                resultado.Text = userInput;
+            }
+            else
+            {
+                resultado.Text = "";
+                userInput += "2";
+                resultado.Text += userInput;
+            }
         }
 
         private void bt_3_Click(object sender, EventArgs e)
         {
-            resultado.Text = "";
-            userInput += "3";
-            resultado.Text += userInput;
+            if (resultado.Text == "0")
+            {
+                resultado.Text = "";
+                userInput = "3";
+                resultado.Text = userInput;
+            }
+            else
+            {
+                resultado.Text = "";
+                userInput += "3";
+                resultado.Text += userInput;
+            }
         }
 
         private void bt_4_Click(object sender, EventArgs e)
         {
-            resultado.Text = "";
-            userInput += "4";
-            resultado.Text += userInput;
+            if (resultado.Text == "0")
+            {
+                resultado.Text = "";
+                userInput = "4";
+                resultado.Text = userInput;
+            }
+            else
+            {
+                resultado.Text = "";
+                userInput += "4";
+                resultado.Text += userInput;
+            }
         }
 
         private void bt_5_Click(object sender, EventArgs e)
         {
-            resultado.Text = "";
-            userInput += "5";
-            resultado.Text += userInput;
+            if (resultado.Text == "0")
+            {
+                resultado.Text = "";
+                userInput = "5";
+                resultado.Text = userInput;
+            }
+            else
+            {
+                resultado.Text = "";
+                userInput += "5";
+                resultado.Text += userInput;
+            }
         }
 
         private void bt_6_Click(object sender, EventArgs e)
         {
-            resultado.Text = "";
-            userInput += "6";
-            resultado.Text += userInput;
+            if (resultado.Text == "0")
+            {
+                resultado.Text = "";
+                userInput = "6";
+                resultado.Text = userInput;
+            }
+            else
+            {
+                resultado.Text = "";
+                userInput += "6";
+                resultado.Text += userInput;
+            }
         }
 
         private void bt_7_Click(object sender, EventArgs e)
         {
-            resultado.Text = "";
-            userInput += "7";
-            resultado.Text += userInput;
+            if (resultado.Text == "0")
+            {
+                resultado.Text = "";
+                userInput = "7";
+                resultado.Text = userInput;
+            }
+            else
+            {
+                resultado.Text = "";
+                userInput += "7";
+                resultado.Text += userInput;
+            }
         }
 
         private void bt_8_Click(object sender, EventArgs e)
         {
-            resultado.Text = "";
-            userInput += "8";
-            resultado.Text += userInput;
+            if (resultado.Text == "0")
+            {
+                resultado.Text = "";
+                userInput = "8";
+                resultado.Text = userInput;
+            }
+            else
+            {
+                resultado.Text = "";
+                userInput += "8";
+                resultado.Text += userInput;
+            }
         }
 
         private void bt_9_Click(object sender, EventArgs e)
         {
-            resultado.Text = "";
-            userInput += "9";
-            resultado.Text += userInput;
+            if (resultado.Text == "0")
+            {
+                resultado.Text = "";
+                userInput = "9";
+                resultado.Text = userInput;
+            }
+            else
+            {
+                resultado.Text = "";
+                userInput += "9";
+                resultado.Text += userInput;
+            }
         }
 
         private void bt_dividir_Click(object sender, EventArgs e)
@@ -199,7 +289,7 @@ namespace Calculator
             second = "";
             userInput = "";
             result = 0.0;
-            resultado.Text = "";
+            resultado.Text = "0";
         }
 
         private void bt_decimal_Click(object sender, EventArgs e)
@@ -215,6 +305,21 @@ namespace Calculator
         private void btminimized_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void porcent_Click(object sender, EventArgs e)
+        {
+            first = userInput;
+            double firstNum;
+            firstNum = Convert.ToDouble(first);
+            result = firstNum / 100;
+            resultado.Text = result.ToString();
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            userInput = "0";
+            resultado.Text = userInput;
         }
     }
 }

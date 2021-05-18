@@ -54,7 +54,7 @@ namespace Calculator
             this.bt_8 = new System.Windows.Forms.Button();
             this.bt_9 = new System.Windows.Forms.Button();
             this.porcent = new System.Windows.Forms.Button();
-            this.negate = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bt_minimized)).BeginInit();
@@ -392,28 +392,30 @@ namespace Calculator
             this.porcent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.porcent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.porcent.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.porcent.Location = new System.Drawing.Point(176, 130);
+            this.porcent.Location = new System.Drawing.Point(98, 128);
             this.porcent.Name = "porcent";
             this.porcent.Size = new System.Drawing.Size(57, 48);
             this.porcent.TabIndex = 18;
             this.porcent.Text = "%";
             this.porcent.UseVisualStyleBackColor = false;
+            this.porcent.Click += new System.EventHandler(this.porcent_Click);
             // 
-            // negate
+            // delete
             // 
-            this.negate.BackColor = System.Drawing.SystemColors.Control;
-            this.negate.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.negate.FlatAppearance.BorderSize = 0;
-            this.negate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.negate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.negate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.negate.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.negate.Location = new System.Drawing.Point(98, 130);
-            this.negate.Name = "negate";
-            this.negate.Size = new System.Drawing.Size(57, 48);
-            this.negate.TabIndex = 19;
-            this.negate.Text = "+/-";
-            this.negate.UseVisualStyleBackColor = false;
+            this.delete.BackColor = System.Drawing.SystemColors.Control;
+            this.delete.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.delete.FlatAppearance.BorderSize = 0;
+            this.delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
+            this.delete.Location = new System.Drawing.Point(176, 128);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(57, 48);
+            this.delete.TabIndex = 19;
+            this.delete.UseVisualStyleBackColor = false;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // clear
             // 
@@ -438,7 +440,7 @@ namespace Calculator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(326, 492);
             this.Controls.Add(this.clear);
-            this.Controls.Add(this.negate);
+            this.Controls.Add(this.delete);
             this.Controls.Add(this.porcent);
             this.Controls.Add(this.bt_9);
             this.Controls.Add(this.bt_8);
@@ -501,7 +503,7 @@ namespace Calculator
         private System.Windows.Forms.Button bt_8;
         private System.Windows.Forms.Button bt_9;
         private System.Windows.Forms.Button porcent;
-        private System.Windows.Forms.Button negate;
+        private System.Windows.Forms.Button delete;
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.Label resultado;
         private System.Windows.Forms.PictureBox bt_minimized;
