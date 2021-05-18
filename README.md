@@ -12,7 +12,7 @@
 ## 🧰Como instalar
 
 <p>📁Clique <a href="https://drive.google.com/drive/folders/1rJdwv_APiHv3hoTLnxsmq7z427w--XX4?usp=sharing">neste link</a> para acessar e baixar a pasta Calculadora,
-Em seguida execute o arquivo Calculator.exe</p>
+em seguida execute o arquivo Calculator.exe</p>
 
 ## ✍️Autor
 
