@@ -2,7 +2,7 @@
 
 ## 📌Sobre
 
-<h3>Calculadora desenvolvida em C#</h3>
+<h3>Calculadora simples desenvolvida em C#!</h3>
 
 ## 📷 Imagens do App
 <h1 align="center">    
