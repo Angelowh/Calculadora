@@ -9,6 +9,11 @@
 <img src="modelo/Captura de tela 2021-05-17 210747.png"></img>
 </h1>
 
+## 🛠️Tecnologias
+<h1 align="left">
+<img alt="C#" src="https://img.shields.io/badge/c%23%20-%23239120.svg?&style=for-the-badge&logo=c-sharp&logoColor=white"/></img>
+</h1>
+
 ## 🧰Como instalar
 
 <p>📁Clique <a href="https://drive.google.com/drive/folders/1rJdwv_APiHv3hoTLnxsmq7z427w--XX4?usp=sharing">neste link</a> para acessar e baixar a pasta Calculadora,
