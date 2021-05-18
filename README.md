@@ -11,7 +11,7 @@
 
 ## 🧰Como instalar
 
-<p>📁Basta apenas acessar <a href="https://drive.google.com/drive/folders/1J3GTXX7aN1cwRb6acWY0KAfGKzTELpYB?usp=sharing">este link</a> e baixar a pasta Calculadora,
+<p>📁Basta apenas acessar <a href="https://drive.google.com/drive/folders/1rJdwv_APiHv3hoTLnxsmq7z427w--XX4?usp=sharing">este link</a> e baixar a pasta Calculadora,
 Em seguida execute o arquivo Calculator.exe</p>
 
 ## ✍️Autor
