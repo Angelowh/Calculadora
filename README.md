@@ -19,7 +19,7 @@ Este projeto é uma calculadora básica em C#, desenvolvida com Windows Forms. A
 ## 🛠 Tecnologias Utilizadas
 
 - **C#**
-- **.NET Framework** (4.7.2 ou superior)
+- **.NET Framework** (4.7.2)
 - **Windows Forms**
 
 ---
